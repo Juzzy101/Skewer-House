@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en" id="html-root">
+
+<head>
+  <title>Book a table | Skewer House</title>
+  <!-- Required meta tags -->
+  <link href="style.css" rel="stylesheet">
+  <!--link to css file-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
+  <!--link to google font-->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body class='bookatable'>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light  w-100">
+      <div class="container-fluid justify-content-between d-flex">
+        <!--Webside tittle - Skewer Graph and Logo - when click goes to the main page"-->
+        <a class="navbar-brand mb-0" href="./index.html">
+          <img id="logo" class="navbar-logo d-none d-sm-block" src="./Graphics/skewer-house-light-yel.png" alt="Skewer Graph and Logo">
+        </a>
+        <!-- Navbar Toggle  - collapses when mobile webpage-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- putting navbar icon for navbar toggler - the haburger icon-->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Navbar content-->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./takeaway.html">Takeaway</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./bookatable.html">Book a Table</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./contact.html">Contact us</a>
+            </li>
+            <!--Dark Mode Button-->
+            <li>
+              <img id="darkModeToggle" src="./Graphics/DarkMode.png" alt="Toggle Dark Mode" style="cursor: pointer; width: 80px;" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--End of navbar-->
+  </header>
+  <main>
+    <div class='container-fluid h-100'>
+      <div class="row h-100">
+        <!--Contact-->
+        <div class="col-md-6 p-5 align-items-center">
+          <div class="w-100">
+            <h1>Contact us</h1>
+            <!--Alert when form has been completed-->
+            <div id="alertBox" class="alert alert-success alert-dismissible fade d-none" role="alert"> Your message has been sent! <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+            </div>
+            <form id="contactForm">
+              <!--Name-->
+              <div class='mb-3'>
+                <label for="name" class="form-label">Your name</label>
+                <input type="text" class="form-control" id="name" placeholder="Bob Smith" required>
+              </div>
+              <!--Email-->
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="email@example.com" required>
+              </div>
+              <!--Message-->
+              <div class="mb-3">
+                <label for="message" class="Your message">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Message here" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+        <!-- Right Column: Contact Info + Map -->
+        <div class="col-md-6 p-4">
+          <div class="map-box p-3 rounded shadow">
+            <!-- Top: Title and Address -->
+            <div class="map-info mb-4">
+              <h2 class="mb-2">Find us</h2>
+              <p> Skewer House Taunton<br /> 41 Bridge Street<br /> Taunton, UK </p>
+            </div>
+            <!-- Bottom: Embedded Map -->
+            <div class="map-responsive">
+              <iframe src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=41,%20Bridge%20Street,%20Taunton+(Skewer%20House%20Taunton)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+  </main>
+  <footer>
+    <!-- Footer -->
+    <p class="introduction">2025</p>
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="skewer.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en" id="html-root">
+  <head>
+    <title>Menu | Skewer House</title>
+    <!-- Required meta tags -->
+    <link href="style.css" rel="stylesheet"> <!--link to css file-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet"> <!--link to google font-->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light w-100">
+        <div class="container-fluid justify-content-between d-flex">
+          <!--Webside tittle - Skewer Graph and Logo - when click goes to the main page"-->
+          <a class="navbar-brand mb-0" href="./index.html">  
+            <img id="logo" class="navbar-logo d-none d-sm-block" src="./Graphics/skewer-house-light-yel.png" alt="Skewer Graph and Logo">
+          </a>
+          <!-- Navbar Toggle  - collapses when mobile webpage-->
+          <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation">                                         
+          <!-- putting navbar icon for navbar toggler - the haburger icon-->
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--Navbar content-->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./takeaway.html">Takeaway</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./bookatable.html">Book a Table</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact us</a>
+              </li>
+                <!--Dark Mode Button-->
+              <li>
+  <img id="darkModeToggle" 
+       src="./Graphics/DarkMode.png" 
+       alt="Toggle Dark Mode" 
+       style="cursor: pointer; width: 80px;" />
+</li>
+      <!--End of navbar-->
+    </header>
+    <main> 
+      
+      <div class="card-group p-2">
+        <div class="card p-1">
+          <div class="videoCard2">
+            <video autoplay loop muted playsinline disablepictureinpicture class="card-img-top">
+              <source src="./Graphics/skewer1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="card-body p-1">
+            <h5 class="card-title d-flex justify-content-center"><a href="./main-manu.html" class="btn btn-dark btn-lg rounded-pill px-4">Menu</a></h5>
+            <p class="card-text">Choose from our freshly grilled skewers, including tender chicken, juicy lamb, and flavorful veggies.
+              Pair your skewers with our tasty sides like seasoned rice, crispy fries, or grilled halloumi.
+              Don’t forget to top it all off with your favorite sauce – from garlic mayo to spicy piri sauce!</p>
+          </div>
+        </div>
+      
+        <div class="card p-1">
+          <img src="https://i0.wp.com/gdziekolwiekjestes.com.pl/wp-content/uploads/2022/06/cocktail-g5268c4acf_1920.jpg?resize=960%2C640&ssl=1"
+               class="card-img-top" alt="Wines & Cocktails">
+          <div class="card-body">
+            <h5 class="card-title d-flex justify-content-center"><a href="./wines&cocktails.html" class="btn btn-dark btn-lg rounded-pill px-4">Wines & Cocktails</a></h5>
+            <p class="card-text">Pair your skewers with a glass from our handpicked wine list or a fresh, vibrant cocktail.
+              Choose from bold reds, crisp whites, or one of our signature mixes like morangoa and poncha maracuja.
+              Ask your server for the perfect pairing!</p>
+          </div>
+        </div>
+      
+        <div class="card p-1">
+          <img src="https://static.wixstatic.com/media/136eb3_3c1af09a2ac74134b5be8f53fbd9ebc9~mv2.jpg/v1/crop/x_0,y_7,w_427,h_422/fill/w_511,h_506,al_c,lg_1,q_80,enc_avif,quality_auto/136eb3_3c1af09a2ac74134b5be8f53fbd9ebc9~mv2.jpg"
+               class="card-img-top" alt="Cheesecakes">
+          <div class="card-body">
+            <h5 class="card-title d-flex justify-content-center"><a href="./Cheesecakes.html" class="btn btn-dark btn-lg rounded-pill px-4">Cheesecakes</a></h5>
+            <p class="card-text d-flex justify-content-center">We serve a different homemade cheesecake every evening—check today’s special!
+              You can also order a whole custom cheesecake made just for you.</p>
+          </div>
+        </div>
+      </div>
+    
+                    
+                  
+    </main>
+    <footer>
+            <!-- Footer -->
+    <p class="introduction">2025</p>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="skewer.js"></script>
+      </body>
+</html>

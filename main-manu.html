@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en" id="html-root">
+  <head>
+    <title>Main Menu | Skewer House</title>
+    <!-- Required meta tags -->
+    <link href="style.css" rel="stylesheet"> <!--link to css file-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet"> <!--link to google font-->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light  w-100">
+        <div class="container-fluid justify-content-between d-flex">
+          <!--Webside tittle - Skewer Graph and Logo - when click goes to the main page"-->
+          <a class="navbar-brand mb-0" href="./index.html">  
+            <img id="logo" class="navbar-logo d-none d-sm-block" src="./Graphics/skewer-house-light-yel.png" alt="Skewer Graph and Logo">
+          </a>
+          <!-- Navbar Toggle  - collapses when mobile webpage-->
+          <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation">                                         
+          <!-- putting navbar icon for navbar toggler - the haburger icon-->
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--Navbar content-->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./takeaway.html">Takeaway</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./bookatable.html">Book a Table</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact us</a>
+              </li>
+               <!--Dark Mode Button-->
+              <li>
+  <img id="darkModeToggle" 
+       src="./Graphics/DarkMode.png" 
+       alt="Toggle Dark Mode" 
+       style="cursor: pointer; width: 80px;" />
+</li>
+      <!--End of navbar-->
+    </header>
+    <main>
+        
+        <!--Collapsive Skewers Prices-->
+        <img 
+  src="./Graphics/MSkewers.png" alt="Skewers" class="img-fluid" style="width: 100vw; cursor: pointer; display: block;" data-bs-toggle="collapse" 
+  data-bs-target="#collapseSkewers" aria-expanded="false" aria-controls="collapseSkewers"/> </img>
+
+        
+            <div class="collapse" id="collapseSkewers">
+            <div class="card card-body">
+                <table class="prices p-3">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">On its own</th>
+                        <th scope="col">With 2 sides</th>
+                        <th scope="col">Skewer House Special</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Lamb</th>
+                        <td>£22</td>
+                        <td>£27</td>
+                        <td>£36</td>
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row">Beef</th>
+                        <td>£22</td>
+                        <td>£27</td>
+                        <td>£36</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Pork</th>
+                        <td>£21</td>
+                        <td>£26</td>
+                        <td>£35</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Chicken (Breast)</th>
+                        <td>£21</td>
+                        <td>£26</td>
+                        <td>£35</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Chicken & Chourico</th>
+                        <td>£21</td>
+                        <td>£26</td>
+                        <td>£35</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Kings Prowns</th>
+                        <td>£28.50</td>
+                        <td>£33.50</td>
+                        <td>£42</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Kings Prowns & Squid</th>
+                        <td>£28.50</td>
+                        <td>£33.50</td>
+                        <td>£42</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Kings Prowns & Chourico</th>
+                        <td>£28.50</td>
+                        <td>£33.50</td>
+                        <td>£42</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Mixed Fish</th>
+                        <td>£22</td>
+                        <td>£27</td>
+                        <td>£36</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Vegetables & Halloumi</th>
+                        <td>£18</td>
+                        <td>£23</td>
+                        <td>£32</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <br>
+                  <h2 class = "introduction">Skewer House Special</h2>
+                  <p class="card-text">Flamed Chourico, Olives, Flat Bread & Choice of Skewer with 3 Sides & One homemade Dessert</p>
+            </div>
+          </div>    
+                
+        </div>
+        </div>     
+       <!-- Image Row -->
+<div class="d-flex flex-row flex-nowrap" style="width: 100vw;">
+  <img 
+    src="./Graphics/MStarter.png" 
+    alt="Starters" 
+    class="img-fluid d-block" 
+    style="width: 33.333vw; cursor: pointer;" 
+    data-bs-toggle="collapse" 
+    data-bs-target="#collapseSkewerStarter" 
+    aria-expanded="false" 
+    aria-controls="collapseSkewerStarter"
+  >
+  <img 
+    src="./Graphics/MSides.png" 
+    alt="Sides" 
+    class="img-fluid d-block" 
+    style="width: 33.333vw; cursor: pointer;" 
+    data-bs-toggle="collapse" 
+    data-bs-target="#collapseSideChoices" 
+    aria-expanded="false" 
+    aria-controls="collapseSideChoices"
+  >
+  <img 
+    src="./Graphics/MExtras.png" 
+    alt="Extras" 
+    class="img-fluid d-block" 
+    style="width: 33.333vw; cursor: pointer;" 
+    data-bs-toggle="collapse" 
+    data-bs-target="#collapseExtras" 
+    aria-expanded="false" 
+    aria-controls="collapseExtras"
+  >
+</div>
+
+<!-- Collapse: Starters -->
+<div class="collapse" id="collapseSkewerStarter">
+   <br>
+                  <p class="card-text p-3">
+    Flamed Chourico, Olives, Flat Bread w/ Garlic Butter £14</p><br>
+  
+</div>
+
+<!-- Collapse: Sides -->
+<div class="collapse" id="collapseSideChoices">
+  <div class="card card-body">
+    <table class="prices">
+      <tbody>
+        <tr><th scope="row">Salad</th><td>£4</td></tr>
+        <tr><th scope="row">Skin on Chips</th><td>£4</td></tr>
+        <tr><th scope="row">Sweet Potato Fries</th><td>£4</td></tr>
+        <tr><th scope="row">Spicy Rice</th><td>£4</td></tr>
+        <tr><th scope="row">Seasonal Greens</th><td>£4</td></tr>
+        <tr><th scope="row">Sauté Potatoes</th><td>£4</td></tr>
+        <tr><th scope="row">Fried Maize</th><td>£4</td></tr>
+        <tr><th scope="row">Corn Cob</th><td>£4</td></tr>
+        <tr><th scope="row">Halloumi</th><td>£4</td></tr>
+        <tr><th scope="row">Coleslaw</th><td>£4</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Collapse: Extras -->
+<div class="collapse" id="collapseExtras">
+  <div class="card card-body">
+    <table class="prices">
+      <tbody>
+        <tr><th scope="row">Flat Bread w/ Garlic Butter</th><td>£6</td></tr>
+        <tr><th scope="row">Flamed Chourico</th><td>£7</td></tr>
+        <tr><th scope="row">Marinated Olives</th><td>£3</td></tr>
+        <tr><th scope="row">Piri Sauce</th><td>£2</td></tr>
+        <tr><th scope="row">Piri Mayo</th><td>£2</td></tr>
+        <tr><th scope="row">Garlic Mayo</th><td>£2</td></tr>
+        <tr><th scope="row">Mint Yoghurt</th><td>£2</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div> 
+
+
+<div class="d-flex flex-row flex-nowrap" style="width: 100vw;">
+  <img 
+    src="./Graphics/MDrinks.png" 
+    alt="Drinks" 
+    class="img-fluid d-block" 
+    style="width: 33.333vw; cursor: pointer;" 
+    data-bs-toggle="collapse" 
+    data-bs-target="#collapseDrinks" 
+    aria-expanded="false" 
+    aria-controls="collapseDrinks"
+  >
+  <img 
+    src="./Graphics/MEmpty.png" 
+    alt="Non-Alcoholic Drinks" 
+    class="img-fluid d-block" 
+    style="width: 33.333vw; cursor: pointer;" 
+    data-bs-toggle="collapse" 
+    data-bs-target="#collapseNonAlcDrinks" 
+    aria-expanded="false" 
+    aria-controls="collapseNonAlcDrinks"
+  >
+  <img 
+    src="./Graphics/MSangria.png" 
+    alt="Sangria" 
+    class="img-fluid d-block" 
+    style="width: 33.333vw; cursor: pointer;" 
+    data-bs-toggle="collapse" 
+    data-bs-target="#collapseSangria" 
+    aria-expanded="false" 
+    aria-controls="collapseSangria"
+  >
+</div>
+         <div class="collapse" id="collapseDrinks">
+            <div class="card card-body">
+              <div class="container mt-5">
+                <div class="row prices">
+                  <div class="col-12 col-md-6 mb-4">
+                      
+                    <table><thead>
+                        <tr>
+                          <th><h2 class = "introduction">Alcoholic Drinks</h2></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">Superbock</th>
+                          <td>£4.5</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Superbock 0%</th>
+                          <td>£3.5</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Superbock Stout</th>
+                          <td>£4.5</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Sheppys Apple Cider</th>
+                          <td>£6.5</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Sheppys Raspberry</th>
+                          <td>£6.5</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Superbock Shandy</th>
+                          <td>£4.5</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Madeira Wine</th>
+                          <td>£5.5</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Tawny Port</th>
+                            <td>£5.5</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Maciera Brandy</th>
+                            <td>£5.5</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Maciera Brandy</th>
+                            <td>£5.5</td>
+                          </tr>
+                         
+                          <tr>
+                            <th scope="row">Prosecco Bottle</th>
+                            <td>£30</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Prosecco Glass</th>
+                            <td>£8</td>
+                          </tr>
+                      
+                      </tbody>
+                    </table>
+                  </div>
+              
+                  <div class="col-12 col-md-6 mb-4">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th><h2 class = "introduction">Non-Alcoholics Drinks</h2></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">Compal fruit Juice<br><i>Apple/Orange/Pineapple/Mango/Passionfruit</i></th>
+                          <td>£3.5</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Brisa Maracuja<br> <i>Sparcling Passionfruit Juice</i></th>
+                          <td>£3.5</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Coke/Diet Coke</th>
+                          <td>£3.5</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Sprite</th>
+                          <td>£3.5</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Sparkling/Still Water</th>
+                          <td>£3.5</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Tonic/Soda Water</th>
+                          <td>£3</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Espresso</th>
+                          <td>£3</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Black/White Coffee</th>
+                            <td>£4</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">English/Chamomile/Mint Teas</th>
+                            <td>£3</td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>  
+              
+  
+                   
+                  <h2 class="introduction p-3"> Spirits</h2>
+                 <p class ="card-text p-3"> Please ask Team what we have available<br>
+                  25ml - £4<br>
+                  50ml - £5.5<br>
+                  with mixer £6</p>
+                    
+                     
+                      
+               
+        </div>
+        </div>    
+
+          </p>
+          <div class="collapse" id="collapseSangria">
+            <div class="card card-body">
+                <table class="prices">
+                    <thead>
+                        <tr>
+                          <th scope="col"></th>
+                          <th scope="col">Glass</th>
+                          <th scope="col">Jug (1ltr)</th>
+                          <th scope="col">House Special Jug</th>
+                        </tr>
+                      </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Classic</th>
+                        <td>£5</td>
+                        <td>£17</td>
+                        <td>£15</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Apple Cider</th>
+                        <td>£5</td>
+                        <td>£17</td>
+                        <td>n/a</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Strawberry Rosé</th>
+                        <td>£5</td>
+                        <td>£17</td>
+                        <td>n/a</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">White Wine</th>
+                        <td>£5</td>
+                        <td>£17</td>
+                        <td>£15</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Prosecco</th>
+                        <td>n/a</td>
+                        <td>£25</td>
+                        <td>n/a</td>
+                      </tr>
+                    </tbody>
+                  </table>
+        </div>
+        </div>   
+          <!--Downloading Wine&Cocktail Prices List-->
+    <div class="d-flex justify-content-center">
+      <a href="./PDFs/Skewer House Menu.pdf" target="_blank" class="btn btn-dark btn-lg rounded-pill px-4 " download> Download Takeway menu </a>
+    </div><br>
+    </main>
+    <footer>
+            <!-- Footer -->
+    <p class="introduction">2025</p>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="skewer.js"></script>
+      </body>
+</html>

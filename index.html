@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en" id="html-root">
+
+<head>
+  <title>Skewer House</title>
+  <!-- Required meta tags -->
+  <link href="style.css" rel="stylesheet">
+  <!--link to css file-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!--link to google font-->
+  <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light w-100 p-0">
+      <div class="container-fluid p-0">
+        <!--Webside tittle - Skewer Graph and Logo - when click goes to the main page"-->
+        <a class="navbar-brand mb-0" href="./index.html">
+          <div class="logo-container">
+            <img id="logo" class="navbar-logo d-none d-sm-block" src="./Graphics/skewer-house-light-yel.png" alt="Skewer Graph and Logo">
+          </div>
+        </a>
+        <!-- Navbar Toggle  - collapses when mobile webpage-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <!--data-bs-toggle="collapse"                      <= indicates the button will toggle collapsible content
+              data-bs-target="#navbarNav"                    <= the default element of ID to collapse and expand 
+              aria-controls="navbarNav"                      <= Accesibility - specifies which element the button controls
+              aria-extended="false"                          <= indicates whether the collapsible content is currently expanded
+              aria-label="Toggle navigation">                <= label to help external or browser software-->
+          <!-- putting navbar icon for navbar toggler - the haburger icon-->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Navbar content-->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./takeaway.html">Takeaway</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./bookatable.html">Book a Table</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact us</a>
+            </li>
+            <!--Dark Mode Button-->
+            <li>
+              <img id="darkModeToggle" src="./Graphics/DarkMode.png" alt="Toggle Dark Mode" style="cursor: pointer; width: 80px;" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--End of navbar-->
+  </header>
+  <main>
+    <!--Two cards from bootstrap - video card and introduction card-->
+    <div class="container-fluid">
+      <div class="row g-0 d-flex align-items-stretch">
+        <!--video card-->
+        <div class="col-md-4 videoCard d-flex">
+          <video autoplay loop muted playsinline disablepictureinpicture class="w-100 h-100" style="object-fit: cover;">
+            <source src="./Graphics/skewer1.mp4" type="video/mp4"> Your browser does not support the video tag.
+          </video>
+        </div>
+        <!--Introduction card-->
+        <div class="col-md-8 d-flex">
+          <div class="introductionCard p-4 shadow-lg w-100">
+            <div class="card-body d-flex flex-column justify-content-center">
+              <h2 class="introduction">Our slice of Madeira in Taunton</h2>
+              <p class="introductionText">Welcome to our family-run restaurant, where we bring the heart of Madeira to your plate with our signature Espetadas – traditional Madeiran beef skewers grilled over open flames. Each skewer is carefully seasoned with garlic, bay leaves, and sea salt, then cooked to perfection for a mouthwatering experience. Served with rustic sides and a warm Madeiran welcome, our Espetadas are more than just a meal – they're a celebration of flavor, tradition, and family. Come taste the island's favorite dish, right here at our table!</p>
+              <!--Buttons section-->
+              <section class="text-center my-5 card-text mt-auto">
+                <h2 class="mb-4 introduction">Explore Skewer House</h2>
+                <div class="introductionButtons d-flex justify-content-center flex-wrap gap-3">
+                  <!--  Opening Hours - Button trigger modal -->
+                  <button type="button" class="btn btn-dark btn-lg rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#openingHoursModal">Opening Hours</button>
+                  <!-- Opening Hours Modal -->
+                  <div class="modal fade" id="openingHoursModal" tabindex="-1" aria-labelledby="openingHoursModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <!--Opening Hours Modal Header-->
+                        <div class="modal-header">
+                          <h1 class="modal-title" id="openingHoursModalLabel">Opening Hours</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <!--Opening Hours Modal Body-->
+                        <div class="modal-body">
+                          <p>Monday-Thursday</p>
+                          <p>15:00-21:00</p>
+                          <p>Friday-Sunday</p>
+                          <p>12:00-22:00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--End of the Opening Hours Modal-->
+                  <!--  About Us Button trigger modal -->
+                  <button type="button" class="btn btn-dark btn-lg rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#aboutUsModal">About Us</button>
+                  <!-- About Us Modal -->
+                  <div class="modal fade" id="aboutUsModal" tabindex="-1" aria-labelledby="aboutUsModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <!--About Us - Modal Header-->
+                        <div class="modal-header">
+                          <h1 class="modal-title" id="aboutUsModalLabel">About Us</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <!--About Us - Modal Body-->
+                        <div class="modal-body">
+                          <h1>A Family-Run Restaurant Serving Traditional Madeiran Espetadas</h1>
+                          <p class="modulePlainText">Welcome to the Skewer House – our slice of Madeira in the heart of Taunton. Our family hails from Madeira, a beautiful Portuguese island nestled in the Atlantic Ocean. With deep culinary roots and a passion for hospitality, we’ve brought the island’s rich flavors to Somerset through our signature dish: the Espetada – traditional Madeiran skewers grilled over open flames.</p> <br>
+                          <h1>Our Journey</h1>
+                          <p class="modulePlainText">In 2003, our mum opened her first restaurant, O' Picado, in Essex. Specializing in a variety of Portuguese dishes, it quickly gained a loyal following. One dish stood out above all — the Espetada became a customer favorite, loved for its bold seasoning and rustic presentation. When we moved to Somerset in 2014, we saw an opportunity to bring a taste of Portugal to the West Country. We found the perfect setting: a charming listed building in Taunton. With a vision of creating an authentic Casa de Espetada — or “skewer house” — we got to work. We hand-crafted tables using wood from the Quantocks, imported crockery from Madeira, and even repurposed church pews from Bridgwater to give the space a truly unique and welcoming character. Every detail was considered to bring the spirit of Madeira to life. On October 16th, 2016, we proudly opened our doors.</p>
+                          <h1>Growing the Family Legacy</h1>
+                          <p class="modulePlainText">Since then, the Skewer House has become one of Taunton’s most loved restaurants, known for our warm hospitality and unforgettable food. Building on that success, we expanded our family venture in September 2019, opening Nobregas Tapas & Paella with our sister Sofia and her incredible team. Though this restaurant sadly closed in October 2023, it remains an important part of our story. In January 2021, Sofia took over the Skewer House, and the following year, in partnership with her husband Pedro, opened the Corner Club — a vibrant Brunch & Dessert Parlour on Bath Place. At Corner Club, you’ll find our beloved cheesecakes, Nobrega’s homemade cronuts, and their signature Cookie Pie. You’ll also spot a few familiar nods to our family restaurants — the Skewer House Bagel and Nobregas Bagel among other sweet and savory delights.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of About Us Modal -->
+                  <!--  Espetadas Button trigger modal -->
+                  <button type="button" class="btn btn-dark btn-lg rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#espetadaModal">What is an Espetada?</button>
+                  <!-- Espetadas Modal -->
+                  <div class="modal fade" id="espetadaModal" tabindex="-1" aria-labelledby="espetadaModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <!--Espetads - Modal Header-->
+                        <div class="modal-header">
+                          <h1 class="modal-title" id="espetadaModalLabel">What is an Espetada?</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <!--Espetadas - Modal Body-->
+                        <div class="modal-body">
+                          <p class="modulePlainText">Espetada roughly translates to "skewer" or "sword" — and on the island of Madeira, they're more than just a meal; they’re a tradition. At Skewer House, we bring that tradition to life with long metal skewers of flame-grilled meat, served hanging from custom-made iron trees at the center of your table. Each skewer is infused with rich, smoky flavors and seasoned with generations of family knowledge. As a proud family-run restaurant, our recipes are passed down through the generations, making our Espetadas truly unique — a heartfelt tribute to our Madeiran heritage, served with warmth and authenticity.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of Espetads Modal -->
+                  <!--  Madeira Button trigger modal -->
+                  <button type="button" class="btn btn-dark btn-lg rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#madeiraModal">Madeira</button>
+                  <!-- Madeira Modal -->
+                  <div class="modal fade" id="madeiraModal" tabindex="-1" aria-labelledby="madeiraModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                      <div class="modal-content">
+                        <!--Madeira - Modal Body - 2  columns-->
+                        <div class="modal-body">
+                          <div class="container-fluid">
+                            <div class="row g-0 d-flex align-items-stretch">
+                              <!-- Madeira first column - map and photo-->
+                              <div class="col-md-6 d-flex">
+                                <img src="./Graphics/madeira.jpg" class="w-80 h-80" style="object-fit: cover;" alt="Madeira Island">
+                              </div>
+                              <!-- Madeira second column - text part -->
+                              <div class="col-md-6 p-4 d-flex flex-column justify-content-center">
+                                <div class="d-flex justify-content-end">
+                                  <!-- Madeira closing button, align to the right on the text column -->
+                                  <button type="button" class="btn-close custom-close" data-bs-dismiss="modal" aria-label="Close"></button><br>
+                                </div>
+                                <h1>Madeira: Island of Fire, Water & Flavor</h1>
+                                <p class="modulePlainText"> Madeira is a small Portuguese island in the Atlantic Ocean, just off the coast of Morocco and north of the Canary Islands. Known for its lush landscapes and year-round mild weather, it’s home to the world’s largest laurel forest and an abundance of exotic flora.</p>
+                                <p class="modulePlainText">Its name means “wood” — a nod to its dense forests. Though the island faces natural extremes like fires and floods, it always bounces back with vibrant culture, rich traditions, and incredible food.</p>
+                                <p class="modulePlainText">It’s no surprise Madeira has been voted Europe’s Best Island several times.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!--End of Madeira - Modal Body - 2  columns-->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of Estapadas Modal -->
+                  <!--Video Container-->
+                  <a href="https://www.youtube.com/watch?v=3Hq8Buo3U_o" id="play-video-btn" class="btn btn-dark btn-lg rounded-pill px-5"><img src="./Graphics/videoLogo.jpg" alt="Watch restaurant video"></img> Our Restaurant</a>
+                  <div id="video-container">
+                    <button id="close-video-btn" aria-label="Close Video">&times;</button>
+                    <div id="player">
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <!-- Footer -->
+    <p class="introduction">2025</p>
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!--video from restaurant-->
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="skewer.js"></script>
+</body>
+
+</html>
