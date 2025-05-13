@@ -1,23 +1,20 @@
-
 body {
-
-margin: 0;
-padding: 0;
- position: relative;
- background-color: #fcf9e8 !important;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: #fcf9e8 !important;
 }
 main {
   background-color: #fcf9e8 !important;
 }
-.card-body{
-background-color: #fcf9e8 !important;
+.card-body {
+  background-color: #fcf9e8 !important;
 }
 table {
-
   background-color: #fcf9e8;
 }
 .navbar {
-  background-color: #fcf9e8;/* light theme */
+  background-color: #fcf9e8; /* light theme */
 }
 
 body.dark-mode .navbar {
@@ -25,62 +22,60 @@ body.dark-mode .navbar {
 }
 
 #navbarNav {
-    text-decoration: overline;
-    font-family: "Birthstone";
-    font-weight: bold;
-    font-style: normal;
-    font-size: x-large;
-    
-  }
-  
-  h1 {
-    text-decoration: overline;
-    font-family: "Birthstone";
-    font-weight: 800;
-    font-style: normal;
-  }
-  
-  .videoCard {
-    background-color: #f8f9fa; /* Light background */
-    border-radius: 8px;        /* rounded corners */
-    overflow: hidden;          /*video doesn't cover the rounded corners */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* shadow */
-    align-items: center;
-    
+  text-decoration: overline;
+  font-family: "Birthstone";
+  font-weight: bold;
+  font-style: normal;
+  font-size: x-large;
 }
-  .introduction {
-    font-family: "Birthstone";
-    font-weight: 600;
-    font-style: normal;
-    color: #2d2419;
-  }
-  
-    .modulePlainText, .card-text {
-      font-family: "Cardo";
-      font-size: large;
-      font-weight: 400;
-      font-style: normal;
-      color: #2d2419;
-    }
 
-  .introductionText {
-    font-family: "Cardo";
-    font-weight: 400;
-    font-style: normal;
-    }
-  .introductionCard {
-    background-color: #fffef5; 
-  }
-  .container-fluid {
-    padding-left: 0;
-    padding-right: 0;
+h1 {
+  text-decoration: overline;
+  font-family: "Birthstone";
+  font-weight: 800;
+  font-style: normal;
+}
+
+.videoCard {
+  background-color: #f8f9fa; /* Light background */
+  border-radius: 8px; /* rounded corners */
+  overflow: hidden; /*video doesn't cover the rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* shadow */
+  align-items: center;
+}
+.introduction {
+  font-family: "Birthstone";
+  font-weight: 600;
+  font-style: normal;
+  color: #2d2419;
+}
+
+.modulePlainText,
+.card-text {
+  font-family: "Cardo";
+  font-size: large;
+  font-weight: 400;
+  font-style: normal;
+  color: #2d2419;
+}
+
+.introductionText {
+  font-family: "Cardo";
+  font-weight: 400;
+  font-style: normal;
+}
+.introductionCard {
+  background-color: #fffef5;
+}
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
 }
 /* Buttons */
 .introductionButtons {
-  font-family: 'Cardo'; 
+  font-family: "Cardo";
   font-size: 2lvw;
   font-weight: bold;
-
 }
 .btn-dark {
   background-color: #2d2419 !important;
@@ -93,170 +88,167 @@ body.dark-mode .navbar {
   color: #fff1d6 !important;
 }
 
-
 /*x button module Madeira*/
 .custom-close {
   position: absolute;
-  top: 10px; 
-  right: 10px; 
+  top: 10px;
+  right: 10px;
 }
 
 /* Fullscreen overlay */
 #video-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.95);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;     /* Make sure it's on top of the page everything else */
-    transition: opacity 0.5s ease;
-  }
-  
-  /* active */
-  #video-container.active {
-    display: flex;
-    opacity: 1;
-  }
-  
-  /* Player size */
-  #player {
-    width: 80vw;
-    height: 45vw;
-    max-width: 1200px;
-    max-height: 675px;
-  }
-  
-  /* Prevent scroll during video */
- /* body.noscroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.95);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Make sure it's on top of the page everything else */
+  transition: opacity 0.5s ease;
+}
+
+/* active */
+#video-container.active {
+  display: flex;
+  opacity: 1;
+}
+
+/* Player size */
+#player {
+  width: 80vw;
+  height: 45vw;
+  max-width: 1200px;
+  max-height: 675px;
+}
+
+/* Prevent scroll during video */
+/* body.noscroll {
     overflow: hidden;
   }*/
-  
-  /* Optional: Force main content lower z-index 
+
+/* Optional: Force main content lower z-index 
   .container, .card, .row {
     position: relative;
     z-index: 1;
   }*/
-  #close-video-btn {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 3.5rem;         /* Bigger X */
-   padding: 10px 20px;        /* Bigger click area */
+#close-video-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 3.5rem; /* Bigger X */
+  padding: 10px 20px; /* Bigger click area */
   color: white;
   background: rgba(0, 0, 0, 0.5); /* Slight background for visibility */
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    z-index: 100000;
-    transition: all 0.3s ease;
-  }
-  
-  #close-video-btn:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: scale(1.1);
-  }
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 100000;
+  transition: all 0.3s ease;
+}
 
-  footer {
-    font-family: "Birthstone";
-    font-weight: 400;
-    font-style: normal;
-    font-size: x-large;
-    text-align: center;
-    background-color: #fcf9e8;
-  }
+#close-video-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
 
+footer {
+  font-family: "Birthstone";
+  font-weight: 400;
+  font-style: normal;
+  font-size: x-large;
+  text-align: center;
+  background-color: #fcf9e8;
+}
 
-  /*dark mode*/
-  body.dark-mode {
-    background-color: #121212 !important;
-    color: #f5f5f5 !important;
-  }
-  main.dark-mode {
+/*dark mode*/
+body.dark-mode {
+  background-color: #121212 !important;
+  color: #f5f5f5 !important;
+}
+main.dark-mode {
   background-color: #1e1e1e !important;
-  }
+}
 
-  body.dark-mode .container-fluid { 
+body.dark-mode .container-fluid {
   background-color: black !important;
- }
+}
 
-  body.dark-mode .videoCard  { 
+body.dark-mode .videoCard {
   background-color: black;
   padding: 4px;
   border-radius: 12px;
   border: 2px solid black;
   overflow: hidden;
 }
-  body.dark-mode .cheesecakes-container,
-  body.dark-mode .map-box,
-  body.dark-mode .download,
-  body.dark-mode .modulePlainText,
-  body.dark-mode .card-text,
-  body.dark-mode .card,
-  body.dark-mode .card-body,
-  body.dark-mode .modal-content,
-  body.dark-mode .introduction,
-  body.dark-mode .introductionCard {
-    background-color: #1e1e1e !important;
-    color: #ffffff !important;
-  }
-  body.dark-mode .videoCard {
+body.dark-mode .cheesecakes-container,
+body.dark-mode .map-box,
+body.dark-mode .download,
+body.dark-mode .modulePlainText,
+body.dark-mode .card-text,
+body.dark-mode .card,
+body.dark-mode .card-body,
+body.dark-mode .modal-content,
+body.dark-mode .introduction,
+body.dark-mode .introductionCard {
+  background-color: #1e1e1e !important;
+  color: #ffffff !important;
+}
+body.dark-mode .videoCard {
   background-color: black !important;
 }
-  body.dark-mode .btn-dark {
-    background-color: #444 !important;
-    border-color: #666 !important;
-  }
-  
-  body.dark-mode .navbar,
-  body.dark-mode .navbar-light {
-    background-color: #070604 !important;
-  }
-  
-  body.dark-mode .nav-link {
-    color: #f5f5f5 !important;
-  }
-  body.dark-mode,
-  body.dark-mode footer {
-    background-color: #1e1e1e !important;
-    color: #ffffff !important;
-  }
-  
+body.dark-mode .btn-dark {
+  background-color: #444 !important;
+  border-color: #666 !important;
+}
 
-  /*cheesecakes carousel size*/
-  .carousel-container {
-    max-width: 800px;
-    margin: auto;
-  }
-  .carousel-img {
-    height: 300px;
-    object-fit: cover;
-  }
+body.dark-mode .navbar,
+body.dark-mode .navbar-light {
+  background-color: #070604 !important;
+}
+
+body.dark-mode .nav-link {
+  color: #f5f5f5 !important;
+}
+body.dark-mode,
+body.dark-mode footer {
+  background-color: #1e1e1e !important;
+  color: #ffffff !important;
+}
+
+/*cheesecakes carousel size*/
+.carousel-container {
+  max-width: 800px;
+  margin: auto;
+}
+.carousel-img {
+  height: 300px;
+  object-fit: cover;
+}
 
 /* menu card sizes*/
-  .card-img-top,
-  .videoCard2 video {
-    height: 300px;
-    object-fit: cover;
-    width: 100%;
-  }
+.card-img-top,
+.videoCard2 video {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
 
-  .card-body {
-    min-height: 220px;
-  }
+.card-body {
+  min-height: 220px;
+}
 
-  .card-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-  }
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
 /*responsive map container*/
 
 .map-responsive {
   overflow: hidden;
-  padding-bottom: 56.25%; 
+  padding-bottom: 56.25%;
   position: relative;
   height: 0;
 }
