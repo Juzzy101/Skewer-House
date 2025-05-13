@@ -59,80 +59,82 @@
         <!--End of navbar-->
     </header>
     <main>
-        <!--Card with carousel imgages of cheescakes-->
-        <div class="container py-3">
-            <div class="carousel-container card rounded-4 shadow-sm">
-                <div id="carouselCheesecakes" class="carousel slide carousel-dark" data-bs-ride="carousel">
-                    <!--Images indicators-->
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselCheesecakes" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselCheesecakes" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselCheesecakes" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <div class="cheesecakes-container">
+            <!--Card with carousel imgages of cheescakes-->
+            <div class="container py-3 ">
+                <div class="carousel-container card rounded-4 shadow-sm">
+                    <div id="carouselCheesecakes" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                        <!--Images indicators-->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselCheesecakes" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselCheesecakes" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselCheesecakes" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <!--Carousel images-->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./Graphics/Ferrero-pretzel-cheescakes.jpg" class="d-block w-100 carousel-img" alt="Ferrero and Pretzel Cheesecakes" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./Graphics/Fig-Wchoc-cheescakes.jpg" class="d-block w-100 carousel-img" alt="Fig and White Chocolate Cheesecakes" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./Graphics/lemon-berry-cheesecakes.jpg" class="d-block w-100 carousel-img" alt="Lemon and Berry Cheesecakes" />
+                            </div>
+                        </div>
+                        <!--Carousel's buttons next and previous-->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCheesecakes" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselCheesecakes" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <!--Carousel images-->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./Graphics/Ferrero-pretzel-cheescakes.jpg" class="d-block w-100 carousel-img" alt="Ferrero and Pretzel Cheesecakes" />
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./Graphics/Fig-Wchoc-cheescakes.jpg" class="d-block w-100 carousel-img" alt="Fig and White Chocolate Cheesecakes" />
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./Graphics/lemon-berry-cheesecakes.jpg" class="d-block w-100 carousel-img" alt="Lemon and Berry Cheesecakes" />
-                        </div>
-                    </div>
-                    <!--Carousel's buttons next and previous-->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCheesecakes" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselCheesecakes" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-                <!--Text underneath the images and buttons with insta, fb and email-->
-                <div class="card-body">
-                    <p class="card-text"> Our Homemade Cheesecakes are available every evening on the dessert menu and change daily. We take Whole Custom Cheesecake orders too! You can find pictures of our creations on our Instagram.<br /> Please contact us for further information via email or our Facebook Business Page. </p>
-                    <div class="d-flex justify-content-center">
-                        <!--Button with a link to Instagram-->
-                        <a href="https://www.instagram.com/skewerhousetaunton/" class="btn btn-dark btn-lg rounded-pill px-4" target="_blank">Instagram</a>
-                        <div style="width: 1rem"></div>
-                        <!-- Space between buttons -->
-                        <!-- Send an email Button -->
-                        <button type="button" class="btn btn-dark btn-lg rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#emailContactModal"> Send an email </button>
-                        <!-- Modal for send an email button -->
-                        <div class="modal fade" id="emailContactModal" aria-labelledby="emailContactLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="emailContactLabel"> New message </h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form id="contactForm">
-                                            <div id="alertBox" class="alert alert-success alert-dismissible fade d-none" role="alert"> Your message has been sent! <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="emailRecipient" class="col-form-label">Recipient:</label>
-                                                <input type="text" class="form-control" id="emailRecipient" value="skewerhousetaunton@gmail.com" readonly />
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="message-text" class="col-form-label">Message:</label>
-                                                <textarea class="form-control" id="message-text"></textarea>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="submit" class="btn btn-dark btn-lg rounded-pill px-4">Send</button>
-                                        </form>
+                    <!--Text underneath the images and buttons with insta, fb and email-->
+                    <div class="card-body">
+                        <p class="card-text"> Our Homemade Cheesecakes are available every evening on the dessert menu and change daily. We take Whole Custom Cheesecake orders too! You can find pictures of our creations on our Instagram.<br /> Please contact us for further information via email or our Facebook Business Page. </p>
+                        <div class="d-flex justify-content-center">
+                            <!--Button with a link to Instagram-->
+                            <a href="https://www.instagram.com/skewerhousetaunton/" class="btn btn-dark btn-lg rounded-pill px-4" target="_blank">Instagram</a>
+                            <div style="width: 1rem"></div>
+                            <!-- Space between buttons -->
+                            <!-- Send an email Button -->
+                            <button type="button" class="btn btn-dark btn-lg rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#emailContactModal"> Send an email </button>
+                            <!-- Modal for send an email button -->
+                            <div class="modal fade" id="emailContactModal" aria-labelledby="emailContactLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="emailContactLabel"> New message </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form id="contactForm">
+                                                <div id="alertBox" class="alert alert-success alert-dismissible fade d-none" role="alert"> Your message has been sent! <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="emailRecipient" class="col-form-label">Recipient:</label>
+                                                    <input type="text" class="form-control" id="emailRecipient" value="skewerhousetaunton@gmail.com" readonly />
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message-text" class="col-form-label">Message:</label>
+                                                    <textarea class="form-control" id="message-text"></textarea>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="submit" class="btn btn-dark btn-lg rounded-pill px-4">Send</button>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div style="width: 1rem"></div>
+                        <!-- Space between buttons -->
+                        <!--Button with a link to Facebook Page-->
+                        <a href="https://www.facebook.com/skewerhousetaunton/?locale=en_GB" class="btn btn-dark btn-lg rounded-pill px-4" target="_blank">Facebook</a>
                     </div>
-                    <div style="width: 1rem"></div>
-                    <!-- Space between buttons -->
-                    <!--Button with a link to Facebook Page-->
-                    <a href="https://www.facebook.com/skewerhousetaunton/?locale=en_GB" class="btn btn-dark btn-lg rounded-pill px-4" target="_blank">Facebook</a>
                 </div>
             </div>
         </div>
