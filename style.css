@@ -171,13 +171,14 @@ body.dark-mode .navbar {
 
   /*dark mode*/
   body.dark-mode {
-    background-color: #121212;
+    background-color: #121212 !important;
     color: #f5f5f5 !important;
   
   }
   body.dark-mode .modulePlainText,
   body.dark-mode .card-text,
   body.dark-mode .card,
+  body.dark-mode .card-body,
   body.dark-mode .modal-content,
   body.dark-mode .introduction,
   body.dark-mode .introductionCard {
