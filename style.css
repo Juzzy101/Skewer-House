@@ -190,6 +190,7 @@ body.dark-mode .navbar {
   border: 2px solid black;
   overflow: hidden;
 }
+  body.dark-mode .cheesecakes-container,
   body.dark-mode .map-box,
   body.dark-mode .download,
   body.dark-mode .modulePlainText,
