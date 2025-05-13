@@ -2,7 +2,7 @@
 <html lang="en" id="html-root">
 
 <head>
-  <title>Book a table | Skewer House</title>
+  <title>Contact | Skewer House</title>
   <!-- Required meta tags -->
   <link href="style.css" rel="stylesheet">
   <!--link to css file-->
@@ -63,12 +63,13 @@
       <div class="row h-100">
         <!--Contact-->
         <div class="col-md-6 p-5 align-items-center">
-          <div class="w-100">
+          <div class="w-100  card-text">
+            <br>
             <h1>Contact us</h1>
             <!--Alert when form has been completed-->
             <div id="alertBox" class="alert alert-success alert-dismissible fade d-none" role="alert"> Your message has been sent! <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
             </div>
-            <form id="contactForm">
+            <form id="contactForm" class=" card-text">
               <!--Name-->
               <div class='mb-3'>
                 <label for="name" class="form-label">Your name</label>
@@ -84,7 +85,7 @@
                 <label for="message" class="Your message">Message</label>
                 <textarea class="form-control" id="message" rows="5" placeholder="Message here" required></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Send Message</button>
+              <button type="submit" class="btn btn-dark btn-lg rounded-pill px-4">Send Message</button>
             </form>
           </div>
         </div>
@@ -93,8 +94,8 @@
           <div class="map-box p-3 rounded shadow">
             <!-- Top: Title and Address -->
             <div class="map-info mb-4">
-              <h2 class="mb-2">Find us</h2>
-              <p> Skewer House Taunton<br /> 41 Bridge Street<br /> Taunton, UK </p>
+              <h1 class="mb-2">Find us</h1>
+              <p class="card-text"> Skewer House Taunton<br /> 41 Bridge Street<br /> Taunton, UK </p>
             </div>
             <!-- Bottom: Embedded Map -->
             <div class="map-responsive">
